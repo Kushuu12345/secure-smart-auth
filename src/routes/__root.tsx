@@ -77,14 +77,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Kushagra Tiwari — Portfolio" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Kushagra Tiwari, B.Tech CSE (AI & ML) student. Python developer, machine learning enthusiast, open to internships.",
+      },
+      { name: "author", content: "Kushagra Tiwari" },
+      { property: "og:title", content: "Kushagra Tiwari — Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "B.Tech CSE (AI & ML) student passionate about Python, Machine Learning, and Data Science.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kushagra Tiwari — Portfolio" },
+      {
+        name: "twitter:description",
+        content:
+          "B.Tech CSE (AI & ML) student passionate about Python, Machine Learning, and Data Science.",
+      },
     ],
     links: [
       {
