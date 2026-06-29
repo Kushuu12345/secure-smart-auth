@@ -18,7 +18,8 @@ import {
   Phone,
   User,
 } from "lucide-react";
-import profilePic from "@/assets/profile-placeholder.jpg";
+import profileAsset from "@/assets/kushagra.jpg.asset.json";
+const profilePic = profileAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -154,13 +155,12 @@ function Hero() {
         <div className="flex justify-center md:justify-end">
           <div className="relative">
             <div className="absolute -inset-2 rounded-full bg-primary/20 blur-2xl" />
-            {/* TODO: Replace src/assets/profile-placeholder.jpg with your own photo (keep the same filename, or update the import above). */}
             <img
               src={profilePic}
               alt="Kushagra Tiwari"
               width={288}
               height={288}
-              className="relative h-56 w-56 rounded-full border-4 border-primary/40 object-cover shadow-xl md:h-72 md:w-72"
+              className="relative h-56 w-56 rounded-full border-4 border-primary/40 object-cover object-top shadow-xl md:h-72 md:w-72"
             />
           </div>
         </div>
