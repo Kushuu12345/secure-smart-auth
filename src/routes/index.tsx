@@ -22,8 +22,7 @@ import {
   Sparkles,
   ArrowRight,
 } from "lucide-react";
-import profileAsset from "@/assets/kushagra.jpg.asset.json";
-const profilePic = profileAsset.url;
+import profilePic from "@/assets/kushagra.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
